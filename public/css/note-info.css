@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    direction: rtl;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+/* العناوين */
+h1, h2, h4, h5 {
+    color: #155724;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.card-body h5{
+    font-size: 25px;
+}
+
+label{
+    font-size: 25px;
+    color: #198754;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+/* الكروت */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    color: #198754;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* الجداول */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.table thead {
+    background-color: #e9f7ef;
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* أزرار */
+.btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* الحقول */
+.form-control {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* التنبيهات */
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: none;
+    font-size: 15px;
+}
+
+.alert-danger, .alert-warning, .text-muted {
+    font-size: 15px;
+}
+
+/* المودال */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ريسبونسيف */
+@media (max-width: 768px) {
+    h1, .card-title {
+        font-size: 17px;
+    }
+
+    .table th, .table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+
+    .card-body {
+        padding: 16px;
+    }
+
+    .modal-dialog {
+        width: 95%;
+        margin: auto;
+    }
+}

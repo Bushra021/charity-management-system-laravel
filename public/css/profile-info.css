@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية العامة */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* التبويبات */
+.nav-tabs {
+    border-bottom: 2px solid #2ecc71;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: #2ecc71;
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #2ecc71;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #27ae60;
+}
+
+/* الكارد */
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* العناوين */
+h1, h2, h3 {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* الفورم */
+form .mb-4 {
+    margin-bottom: 20px;
+}
+
+label.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+input.form-control, select.form-control, textarea.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.4);
+    outline: none;
+}
+
+/* النصوص */
+.text-danger {
+    color: #e74c3c;
+}
+
+/* استجابة الشاشة */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    input.form-control, select.form-control, textarea.form-control {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+/* تنسيق جدول أفراد العائلة */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tbody tr:hover {
+    background-color: #f2fef6;
+}
+
+table td button {
+    background-color: transparent;
+    border: none;
+    color: #e74c3c;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+table td button:hover {
+    color: #c0392b;
+}
+
+/* رسالة لا يوجد أفراد */
+table td[colspan] {
+    font-style: italic;
+    color: #777;
+    font-size: 18px;
+    background-color: #f9f9f9;
+}
+
+/* رابط إضافة فرد */
+a[href*="member/create"] {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #2ecc71;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a[href*="member/create"]:hover {
+    background-color: #27ae60;
+    text-decoration: none;
+}
+
+/* استجابة الجدول */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    table td {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #28a745;
+        display: block;
+        margin-bottom: 5px;
+    }
+}

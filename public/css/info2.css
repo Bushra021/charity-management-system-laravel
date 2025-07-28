@@ -1,0 +1,322 @@
+/* info3.css */
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+
+h2 {
+    color: #2b9348; /* لون أخضر احترافي */
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h5 {
+    color: #337c3b;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+input:not([type="checkbox"]),
+textarea,
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+}
+
+.input, textarea, select{
+    font-weight: 400;
+}
+
+
+.flatpickr-birth {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Cairo', sans-serif;
+}
+.position-relative {
+    width: 100%;
+}
+
+.form-control{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+}
+/* تأثير عند التركيز */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2b9348;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(43, 147, 72, 0.3);
+}
+
+/* مظهر عند وجود خطأ */
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+    border-color: #d90429;
+    background-color: #fff5f5;
+}
+
+/* مظهر خطأ */
+.text-danger {
+    color: #d90429;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* مظهر نجاح */
+.alert-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #155724;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.large-option {
+    font-size: 20px;
+    color: black;
+}
+
+.alert-success::before {
+    content: '✔';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #2b9348;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-check {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    direction: rtl;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #337c3b;
+    border-radius: 4px;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #528753;
+    border-color: #4CAF50;
+}
+
+.form-check-input:checked::after {
+    content: "✔";
+    color: white;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    font-size: 14px;
+}
+
+.form-check-label {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+    user-select: none;
+    cursor: pointer;
+    padding-right: 10px; /* هذا بيعطي مسافة واضحة بين المربع والنص */
+}
+
+
+@media (max-width: 576px) {
+    .form-check-label {
+        font-size: 16px;
+    }
+}
+
+/* الزر */
+.btn-primary {
+    background-color: #2b9348;
+    border-color: #2b9348;
+    color: white;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #20743a;
+    border-color: #20743a;
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* أقسام إضافية */
+#mother-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+}
+
+/* تنسيق الحقول بالنموذج */
+#patient-form .form-group,
+#patient-form .mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* الزر داخل النموذج */
+#patient-form button[type="submit"] {
+    padding: 12px;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+/* الريسبونسيف العام - عند تصغير الشاشة أقل من 992px */
+@media (max-width: 800px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control,
+    input,
+    textarea,
+    select {
+        width: 100%;
+        font-size: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* استجابة إضافية للشاشات الأصغر - أقل من 768px */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-title {
+        font-size: 25px;
+    }
+
+
+    .form-check {
+        flex-direction: row;
+    }
+
+    .form-check-label {
+        font-size: 16px;
+    }
+
+    .form-control,
+    input,
+    textarea,
+    select {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h5
+    {
+
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+}

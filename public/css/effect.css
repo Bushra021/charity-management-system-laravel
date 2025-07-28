@@ -1,0 +1,111 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+h2{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #337c3b;
+}
+.form-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-select {
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+.form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(50 , 167 ,69 ,0.25);
+}
+
+.form-select option:first-child {
+    color: #888;
+}
+
+/* زر الحفظ */
+button[type="submit"] {
+    width: 100%;
+    background-color: #28a745;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* التنبيهات */
+.alert {
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+/* الرسائل */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* الخطأ */
+.invalid-feedback {
+    font-size: 14px;
+    color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        max-width: 500px;
+        margin: 30px 15px;
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-label {
+        font-size: 15px;
+    }
+
+    .form-select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

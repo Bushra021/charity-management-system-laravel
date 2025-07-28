@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* الحاوية العامة */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* كرت الخدمات */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+/* ترويسة الكرت */
+.card-header {
+    background-color: #e2f0e8;
+    padding: 16px 20px;
+    border-bottom: 1px solid #d1e7dd;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #155724;
+}
+
+/* جسم الكرت */
+.card-body {
+    padding: 20px;
+}
+
+.mb-0{
+    font-size: 20px;
+}
+/* الجداول */
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.table thead th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* الأزرار */
+.btn-success {
+    background-color: #198754;
+    border: none;
+    padding: 10px 22px;
+    font-size: 15px;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+}
+
+.btn-danger {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #dc3545 !important;
+    color: white !important;
+    z-index: 9999;
+    border: none;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+/* نص فارغ */
+.text-muted {
+    color: #999;
+    font-size: 14px;
+}
+
+/* أيقونات */
+.card-header i {
+    color: #198754;
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #198754; /* لون المؤشر */
+    cursor: pointer;
+    appearance: auto; /* تأكد من ظهور المربع */
+    border: 1px solid #aaa;
+}
+
+
+/* هوامش */
+.mt-4 {
+    margin-top: 24px;
+}
+.mb-4 {
+    margin-bottom: 24px;
+}
+
+.p-3{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+i {
+    margin-left: 6px;
+}
+/* ✅ استجابة الشاشة (Responsive) */
+@media (max-width: 768px) {
+    .card-header {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table th, .table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .btn-success, .btn-danger {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}
+
+/* ✅ تنبيه تنسيقي */
+.alert {
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+/* ✅ زر أوتلاين بلون تحذيري */
+.btn-outline-warning {
+    background-color: transparent;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+}
