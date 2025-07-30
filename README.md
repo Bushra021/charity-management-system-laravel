@@ -54,7 +54,7 @@ A **Laravel 12** based web application designed to manage charity services, hand
 ![Login Page](screenshots/login.JPG)
 
 ### 🔑 Sign UP  Page
-![Sign UP  Page](screenshots/sign up.JPG)
+![Sign UP  Page](screenshots/signup.JPG)
 
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.JPG)
