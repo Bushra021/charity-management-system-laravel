@@ -43,3 +43,19 @@ A **Laravel 12** based web application designed to manage charity services, hand
 6. Generate application key: `php artisan key:generate`  
 7. Run database migrations: `php artisan migrate`  
 8. Start the development server: `php artisan serve`
+
+---
+## 📷 Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/homepage.JPG)
+
+### 🔑 Login Page
+![Login Page](screenshots/login.JPG)
+
+### 🔑 Sign UP  Page
+![Sign UP  Page](screenshots/sign up.JPG)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.JPG)
+
