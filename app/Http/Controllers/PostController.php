@@ -25,7 +25,7 @@ class PostController extends Controller
             'type' => 'required|in:news,event,donation',
             'post' => 'required|string',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif',
-            'video' => 'nullable|file|mimetypes:video/mp4,video/webm,video/ogg|max:50000', // أو رابط
+            'video' => 'nullable|file|mimetypes:video/mp4,video/webm,video/ogg|max:262144', // القيمة الجديدة لـ 256 ميجابايت
             'video_link' => 'nullable|url'
         ],[
                 'type.required' => 'يرجى اختيار نوع المنشور.',
@@ -36,7 +36,7 @@ class PostController extends Controller
                 'photo.max' => 'أقصى حجم مسموح للصورة هو 2 ميجابايت.',
                 'video.file' => 'يجب أن يكون الفيديو ملفًا.',
                 'video.mimetypes' => 'صيغة الفيديو غير مدعومة، الصيغ المسموحة: mp4، webm، ogg.',
-                'video.max' => 'أقصى حجم مسموح للفيديو هو 20 ميجابايت.',
+                'video.max' => 'أقصى حجم مسموح للفيديو هو 256 ميجابايت.',
                 'video_link.url' => 'رابط الفيديو غير صالح.'
         ]);
 
@@ -87,7 +87,7 @@ class PostController extends Controller
             'type' => 'required|in:news,event,donation',
             'post' => 'required|string',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif',
-            'video' => 'nullable|file|mimetypes:video/mp4,video/webm,video/ogg|max:50000',
+            'video' => 'nullable|file|mimetypes:video/mp4,video/webm,video/ogg|max:262144', // القيمة الجديدة لـ 256 ميجابايت
             'video_link' => 'nullable|url'
         ], [
             'type.required' => 'يرجى اختيار نوع المنشور.',
@@ -98,7 +98,7 @@ class PostController extends Controller
             'photo.max' => 'أقصى حجم مسموح للصورة هو 2 ميجابايت.',
             'video.file' => 'يجب أن يكون الفيديو ملفًا.',
             'video.mimetypes' => 'صيغة الفيديو غير مدعومة، الصيغ المسموحة: mp4، webm، ogg.',
-            'video.max' => 'أقصى حجم مسموح للفيديو هو 20 ميجابايت.',
+            'video.max' => 'أقصى حجم مسموح للفيديو هو 256 ميجابايت.',
             'video_link.url' => 'رابط الفيديو غير صالح.'
         ]);
 
