@@ -48,14 +48,14 @@ A **Laravel 12** based web application designed to manage charity services, hand
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/homepage.JPG)
+![Home Page](screenshots/homepage.jpg)
 
 ### 🔑 Login Page
-![Login Page](screenshots/login.JPG)
+![Login Page](screenshots/login.jpg)
 
 ### 🔑 Sign UP  Page
-![Sign UP  Page](screenshots/signup.JPG)
+![Sign UP  Page](screenshots/signup.jpg)
 
 ### 📊 Dashboard
-![Dashboard](screenshots/dashboard.JPG)
+![Dashboard](screenshots/dashboard.jpg)
 
